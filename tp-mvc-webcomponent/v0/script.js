@@ -1,4 +1,3 @@
-
 let display = document.getElementById("display");
 let button0 = document.getElementById("button0");
 let button1 = document.getElementById("button1");
@@ -12,9 +11,10 @@ let button8 = document.getElementById("button8");
 let button9 = document.getElementById("button9");
 let buttonPlus = document.getElementById("buttonPlus");
 let buttonMinus = document.getElementById("buttonMinus");
-let buttonDivide = document.getElementById("buttonDivine");
+let buttonDivision = document.getElementById("buttonDivine");
 let buttonProduct = document.getElementById("buttonProduct");
 let buttonCalculate = document.getElementById("buttonCalculate");
+let buttonDecimal = document.getElementById("buttonDecimal");
 let buttonClear = document.getElementById("buttonClear");
 
 
@@ -88,6 +88,11 @@ function onButtonProductClick()
 	display.value += '*';
 }
 
+function onButtonDecimalClick()
+{   	
+	display.value += '.';
+}
+
 function onButtonClearClick()
 {
 	display.value = ' ';
@@ -113,6 +118,12 @@ buttonPlus.onclick = onButtonPlusClick;
 buttonMinus.onclick = onButtonMinusClick;
 buttonDivision.onclick = onButtonDivisionClick;
 buttonProduct.onclick = onButtonProductClick;
+
+buttonDecimal.onclick = onButtonDecimalClick;
+buttonCalculate.onclick = onButtonCalculateClick;
+buttonClear.onclick = onButtonClearClick;
+
+
 
 buttonCalculate.onclick = onButtonCalculateClick;
 buttonClear.onclick = onButtonClearClick;
